@@ -7,14 +7,17 @@ public:
 	int num_p;
 	prime();
 	prime(int p);
-	bool is_prime(int p);
+	bool isprime(int p);
+	~prime(){
+		//cout << "Delete prime" << endl;
+	}
 };
  
 class field_Zp
 {
 public:
-	int p;
+	int Fp;
 	field_Zp();
-	field_Zp(int p);
+	field_Zp(prime p);
 
 };
