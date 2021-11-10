@@ -1,7 +1,7 @@
 # Shamir-s-Secret-Share-Protocol
 
 ## Object
-Realize:
+Will Realize:
 - field
 - Shamir
 - BGW protocol
