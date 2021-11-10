@@ -2,7 +2,7 @@
 #include "field.h"
 
 using namespace std;
-
+ 
 int main()
 {
 	field_Zp F = field_Zp(10);
