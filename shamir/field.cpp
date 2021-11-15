@@ -1,6 +1,6 @@
 #include <iostream>
 #include <assert.h>
-#include "field.h"
+#include "field.h" 
   
 using namespace std;
 
@@ -62,4 +62,28 @@ int field_Zp::power(int a, int b)
         a = modp(a*a);
     }
     return ans;
+}
+int field_Zp::inverse(int num){
+	num = modp(num);
+	return power(num,Fp-2);
+}
+int field_Zp::add(int a, int b){
+	a = modp(a);
+	b = modp(b);
+	return modp(a+b);
+}
+int field_Zp::sub(int a, int b){
+	a = modp(a);
+	b = neg_ele(b);
+	return modp(a+b);
+}
+int field_Zp::mul(int a, int b){
+	a = modp(a);
+	b = modp(b);
+	return modp(a*b);
+}
+int field_Zp::div(int a, int b){
+	a = modp(a);
+	b = inverse(b);
+	return modp(a*b);
 }
