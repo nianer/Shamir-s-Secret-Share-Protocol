@@ -1,3 +1,6 @@
+#ifndef FIELD_H
+#define FIELD_H
+
 #include <iostream>
 
 using namespace std;
@@ -29,3 +32,5 @@ public:
 	int div(int a, int b);    // division a / b
 
 };
+
+#endif

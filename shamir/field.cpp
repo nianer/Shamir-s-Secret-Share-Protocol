@@ -65,6 +65,11 @@ int field_Zp::power(int a, int b)
 }
 int field_Zp::inverse(int num){
 	num = modp(num);
+	if(num == 0){
+		cout << "0 has no inverse element" << endl;
+		assert(0);
+		return 0;
+	}
 	return power(num,Fp-2);
 }
 int field_Zp::add(int a, int b){
